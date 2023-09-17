@@ -22,6 +22,7 @@ public class Mail {
         props.setProperty("mail.transport.protocol", "smtp");
         props.setProperty("mail.smtp.host", Config.EmailVerify.EmailSmtpHost);
         props.setProperty("mail.smtp.auth", "true");
+        props.setProperty("mail.smtp.starttls.enable", "true");
 
         final String smtpPort = Config.EmailVerify.EmailSmtpPort;
         props.setProperty("mail.smtp.port", smtpPort);
